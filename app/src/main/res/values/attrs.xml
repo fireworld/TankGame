@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SteeringView">
+        <attr name="left_background" format="reference"/>
+        <attr name="right_background" format="reference"/>
+        <attr name="up_background" format="reference"/>
+        <attr name="down_background" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="FireView">
+        <attr name="a_background" format="reference"/>
+        <attr name="b_background" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SteeringView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cc.iceworld.tankgame.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Switch
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="20dp"
+        android:text="@string/start"/>
+
+
+    <cc.iceworld.tankgame.widget.SteeringView
+        android:id="@+id/steering_view"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="30dp"
+        SteeringView:down_background="@drawable/btn_steer"
+        SteeringView:left_background="@drawable/btn_steer"
+        SteeringView:right_background="@drawable/btn_steer"
+        SteeringView:up_background="@drawable/btn_steer"/>
+
+    <cc.iceworld.tankgame.widget.FireView
+        android:id="@+id/fire_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="30dp"/>
+</FrameLayout>
